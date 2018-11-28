@@ -1,0 +1,6 @@
+cats-dogs*
+PetImages
+*.model
+*.mlmodel
+*.ipynb_checkpoints
+Untitled*

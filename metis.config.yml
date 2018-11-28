@@ -1,0 +1,7 @@
+project_token: 64868293e102cbe6b7e61a9e
+name: TuriImageClassifier
+jobs:
+  - job_id: 8caa0475-e63d-41da-8b4a-d7fe35e92283
+    language: python
+    name: Main
+    entrypoint: "main.py"
