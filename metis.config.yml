@@ -5,3 +5,10 @@ jobs:
     language: python
     name: image_classifier
     entrypoint: "image_classifier.py"
+    resources:
+      requests:
+        cpu: 6
+        memory: 8Gi
+      limits:
+        cpu: 6
+        memory: 8Gi
