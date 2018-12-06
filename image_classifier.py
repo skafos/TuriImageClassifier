@@ -36,7 +36,7 @@ ska.log("Building the model", labels = ['image_classifier'])
 model = tc.image_classifier.create(train_data, target='label')
 
 # Save the model for later use in Turi Create
-coreml_model_name = 'image_classification.mlmodel'
+coreml_model_name = 'image_classifier.mlmodel'
 res = model.export_coreml(coreml_model_name)
 
 model_spec = coremltools.utils.load_spec(coreml_model_name)
