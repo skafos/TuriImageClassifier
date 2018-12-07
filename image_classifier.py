@@ -8,7 +8,7 @@ from skafossdk import *
 ska  = Skafos()
 
 
-data_url = "https://s3.amazonaws.com/skafos.example.data/PetImages.tar.gz"
+data_url = "https://s3.amazonaws.com/skafos.example.data/ImageClassifier/PetImages.tar.gz"
 data_path = "PetImages.tar.gz"
 
 # pull the tar
