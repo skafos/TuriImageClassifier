@@ -1,8 +1,8 @@
 # Turi Image Classifier
 
-The following repo contains code for training an image classifier model on Skafos using the Turi Create framework.
+_This public repository is designed for use in the Skafos ML delivery platform, which is available at metismachine.com._
 
-As much as possible, the code in this repo mimicks Turi Create's image classifier example which can be found [here](https://apple.github.io/turicreate/docs/userguide/image_classifier/). 
+The following repo contains code for training an image classifier model on Skafos using the Turi Create framework. As much as possible, the code in this repo mimicks Turi Create's image classifier example which can be found [here](https://apple.github.io/turicreate/docs/userguide/image_classifier/). 
 
 ## What is here?
 
