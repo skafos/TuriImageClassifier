@@ -5,13 +5,13 @@ import coremltools
 import save_models as sm
 from skafossdk import *
 
-ska  = Skafos()
+ska  = Skafos() # initialize Skafos
 
 
-data_url = "https://s3.amazonaws.com/skafos.example.data/PetImages.tar.gz"
+data_url = "https://s3.amazonaws.com/skafos.example.data/ImageClassifier/PetImages.tar.gz"
 data_path = "PetImages.tar.gz"
 
-# pull the tar
+# Fetch training data from an AWS bucket publicly hosted by Metis Machine. 
 ska.log("Retrieving the images from online", labels = ['image_classifier'])
 retrieve = urllib.request.urlretrieve(data_url, data_path)
 
@@ -31,12 +31,12 @@ data['label'] = data['path'].apply(lambda path: 'dog' if '/Dog' in path else 'ca
 # Make a train-test split
 train_data, test_data = data.random_split(0.8)
 
-# Create the model
+# Train an image classification model, specifying the name of the 'target'/'label' column
 ska.log("Building the model", labels = ['image_classifier'])
 model = tc.image_classifier.create(train_data, target='label')
 
-# Save the model for later use in Turi Create
-coreml_model_name = 'image_classification.mlmodel'
+# Save the model for later use in Skafos
+coreml_model_name = 'image_classifier.mlmodel'
 res = model.export_coreml(coreml_model_name)
 
 model_spec = coremltools.utils.load_spec(coreml_model_name)
