@@ -10,7 +10,7 @@ The two main components to this repo are:
 - `image_classifier.py` - a Skafos job that trains an image classifier model and saves a core ml model
 - `image_classifier.ipynb` - a python notebook with the same code as the above `image_classifier.py` job.
 
-Additionallly, there exists:
+Additionallly, there exist:
 - `metis.config.yml` - a file telling Skafos how the jobs in this project
 - `requirements.txt` - a file telling Skafos the project's dependencies
 - `save_models.py` - a helper module to save the core ml model to Skafos
