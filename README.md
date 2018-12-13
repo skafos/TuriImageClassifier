@@ -30,7 +30,6 @@ The image classifier model uses `model='resnet-50'` by default. Using this model
 
 ```python
 
-model = tc.image_classifier.create(train_data, target='label',
-										model='squeezenet_v1.1')
+model = tc.image_classifier.create(train_data, target='label', model='squeezenet_v1.1')
 
 ```
