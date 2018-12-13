@@ -4,3 +4,6 @@ PetImages
 *.mlmodel
 *.ipynb_checkpoints
 Untitled*
+*.gz
+__pycache__/
+cifar*
