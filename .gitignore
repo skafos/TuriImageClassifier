@@ -6,4 +6,5 @@ PetImages
 Untitled*
 *.gz
 __pycache__/
+common/__pycache__/
 cifar*
