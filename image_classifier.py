@@ -2,7 +2,7 @@ import turicreate as tc
 import urllib
 import tarfile
 import coremltools
-import save_models as sm
+import common.save_models as sm
 from skafossdk import *
 
 ska  = Skafos() # initialize Skafos
@@ -39,6 +39,7 @@ model = tc.image_classifier.create(train_data, target='label')
 coreml_model_name = 'image_classifier.mlmodel'
 res = model.export_coreml(coreml_model_name)
 
+# convert model weights to half-precision to save on model size
 model_spec = coremltools.utils.load_spec(coreml_model_name)
 model_fp16_spec = coremltools.utils.convert_neural_network_spec_weights_to_fp16(model_spec)
 coremltools.utils.save_spec(model_fp16_spec, coreml_model_name)
