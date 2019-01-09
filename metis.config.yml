@@ -4,7 +4,7 @@ jobs:
   - job_id: e5b40832-c78c-4c44-8db4-7d59354273e7
     language: python
     name: image_classifier
-    entrypoint: "image_classifier.py"
+    entrypoint: "image_classifier.ipynb"
     resources:
       requests:
         cpu: 6

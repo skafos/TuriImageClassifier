@@ -6,15 +6,15 @@ The following repo contains code for training an image classifier model on Skafo
 
 ## What is here?
 
-The two main components to this repo are:
-- `image_classifier.py` - a Skafos job that trains a cat/dog image classifier model and saves a core ml model to the Skafos framework
-- `image_classifier.ipynb` - a Python notebook with the same code as the above `image_classifier.py` job.
+The main components of this repo are:
+- `image_classifier.py` - a Skafos job that trains 
+- `image_classifier.ipynb` - a Python notebook a cat/dog image classifier model and saves a core ml model to the Skafos framework
 
 Additionallly, there exist:
 
 - `metis.config.yml` - a file telling Skafos how to execute the jobs in this project
 - `requirements.txt` - a file telling Skafos the project's dependencies
-- `utilities/` - a directory that contains helper functions used by `image_classifier.py` and `image_classifier.ipynb`
+- `utilities/` - a directory that contains helper functions used by `image_classifier.ipynb`
 - `userguide/` - a directory that contains additional information about this Image Classification model, how to incorporate your own data, advanced usage, and more. 
 
 ## Further notes:
