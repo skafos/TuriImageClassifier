@@ -8,3 +8,4 @@ Untitled*
 __pycache__/
 common/__pycache__/
 cifar*
+.idea/*
