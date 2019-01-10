@@ -23,7 +23,7 @@ skafos_save_model(
 '''
 
 def _load_mlmodel(name):
-	  # load the saved coreml_model
+    # load the saved coreml_model
     with open(name, 'rb') as data:
         result = data.read()
     return result
@@ -38,12 +38,9 @@ def compress_model(coreml_model_name):
 
     # load up the model written to file
     mc = _load_mlmodel(coreml_model_name)
-
-    # re-name the model so user knows its compressed on save
-    compressed_model_name = coreml_model_name + ".gzip"
     # compress the model
     compressed_model = gzip.compress(mc)
-    return compressed_model_name, compressed_model
+    return compressed_model
 
 def skafos_save_model(skafos, model_name, compressed_model, tags=["latest"], permissions="private"):
     # try saving the model
