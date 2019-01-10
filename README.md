@@ -2,7 +2,7 @@
 
 _This public repository is designed for use in the Skafos ML delivery platform, which is available at metismachine.com. Use of this repo outside of the Skafos platform is not supported by Metis Machine._
 
-The following repo contains code for training an image classifier model on Skafos using the [Turi Create framework](https://apple.github.io/turicreate/docs/userguide/image_classifier/). The example model is based on images of cats and dogs, and given a new photo, will predict whether that photo is of a cat or a dog. 
+The following repo contains code for training an image classifier model on Skafos using the [Turi Create framework](https://apple.github.io/turicreate/docs/userguide/image_classifier/). The example model is based on images of cats and dogs, and given a new photo, will classify the photo as a cat or a dog. 
 
 ## What is here?
 
