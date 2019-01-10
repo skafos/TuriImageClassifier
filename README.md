@@ -13,7 +13,7 @@ The components of this repo are:
 - `requirements.txt` - a file describing all required Python dependencies.
 
 ## About the model
-- The data used to train this example model are 25000 images, 12500 Cats and 12500 Dogs, and can be found [here](https://www.microsoft.com/en-us/download/details.aspx?id=54765). 
+- The data used to train this example model are 25,000 images, 12,500 Cats and 12,500 Dogs, and can be found [here](https://www.microsoft.com/en-us/download/details.aspx?id=54765). 
 - Once trained, you can give the model a photo, and it will identify that photo as a cat or a dog. 
 - To retrain this image classification model on new data, we highly recommend doing it on a GPU. As benchmarks, we've found that training this Turi Create image classification model takes about 10 minutes on a GPU and about an hour and a half on Skafos with 6 CPU's and 10G of memory. Training will take considerably more time locally using only CPU. GPU support on Skafos is currently in development and will be coming soon.
 
