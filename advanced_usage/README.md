@@ -8,11 +8,9 @@ The purpose of this Advanced Usage Guide is to provide additional tooling, tips,
 -  **Model Runtime**: The out-of-the box model takes a long time to train on CPU. Try limiting the amount of data used to train the model. Likely, you don't need all 25,000 images of cats and dogs to get something working. Also, set `max_iterations` lower (default value is 10) in the `turicreate.image_classifier.create` function if you want something to train quickly (at the cost of reduced accuracy).
 -  **Model Size**: In addition to the tips above, try using the `squeezenet_v1.1` model in the `turicreate.image_classifier.create` function which will reduce the size of the model significantly. This may also impact the predictive abilities of the model to some degree.
 
-
 ## Resources
 
 -  `images_in_turicreate.ipynb`: Gives some tips on wrangling image data in Turi Create, detailing proper formatting and several helper functions.
-
 
 ## Need Help?
 Didn't find something you need? Confused by something? Need more guidance?
