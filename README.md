@@ -1,6 +1,12 @@
 # Turi Image Classifier
 
-_This public repository is designed for use in the Skafos ML delivery platform, which is available at metismachine.com. Use of this repo outside of the Skafos platform is not supported by Metis Machine._
+**DEPRECATION WARNING**
+
+This code example was intended for use by the legacy Skafos platform and is no longer being maintained. On 05/29/2019, a new version of [Skafos](https://skafos.ai) was released, streamlining model delivery to the edge.
+
+[Sign-up](https://dashboard.skafos.ai/sign-up) for an account, [join](https://join.slack.com/t/metismachine-skafos/shared_invite/enQtNTAxMzEwOTk2NzA5LThjMmMyY2JkNTkwNDQ1YjgyYjFiY2MyMjRkMzYyM2E4MjUxNTJmYmQyODVhZWM2MjQwMjE5ZGM1Y2YwN2M5ODI) our Slack community, and explore some [example models](https://github.com/skafos/colab-example-models) to get started.
+
+---
 
 The following repo contains code for training an image classifier model on Skafos using the [Turi Create framework](https://apple.github.io/turicreate/docs/userguide/image_classifier/). The example model is based on images of cats and dogs, and given a new photo, will classify the photo as a cat or a dog. 
 
